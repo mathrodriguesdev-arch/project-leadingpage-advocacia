@@ -139,7 +139,7 @@ button:active{
 
     header{
         width: 100%;
-        height: 35%;
+        height: 40%;
         background-size: cover; 
     }
 
@@ -162,20 +162,23 @@ button:active{
 
     header{
         width: 100%;
-        height: 30%;
+        height: 35%;
         background-size: cover;
         background-position:center;
     }
 
     h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     p{
         font-size: 25px;
     }
 
-
+        .img-logo{
+        width: 60%;
+    
+    }
     
 }
 
@@ -183,7 +186,7 @@ button:active{
 
     header{
         width: 100%;
-        height: 30%;
+        height: 37%;
         background-size: cover;
         background-position:center;
     }
@@ -197,7 +200,7 @@ button:active{
     }
 
     .section-assuntos h1{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .container-assuntos{
@@ -208,6 +211,14 @@ button:active{
 
     .assuntos{
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .img-logo{
+        width: 70%;
+    
     }
     
 }
@@ -216,7 +227,7 @@ button:active{
 
     header{
         width: 100%;
-        height: 30%;
+        height: 37%;
       
         background-size: cover;
         background-position:center;
@@ -240,6 +251,13 @@ button:active{
     .link-contact{
         font-size: 17px;
     }
+
+        .assuntos{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 
@@ -247,7 +265,7 @@ button:active{
 
     header{
         width: 100%;
-        height: 30%;
+        height: 37%;
         background-size: cover;
         background-position:center;
     }
@@ -268,9 +286,17 @@ button:active{
     }
 
     .img-logo{
-        width: 60%;
+        width: 70%;
     
     }
+
+        .assuntos{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     
 }
 
@@ -278,7 +304,7 @@ button:active{
 
     header{
         width: 100%;
-        height: 32%;
+        height: 45%;
         background-size: cover;
         background-position:center;
     }
@@ -301,5 +327,14 @@ button:active{
     .link-contact{
         font-size: 15px;
     }
+
+        .assuntos{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     
 }
