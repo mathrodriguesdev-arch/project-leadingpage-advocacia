@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.wrapper{
+    width: 100%;
+    height: calc(100vh + 100vh);
+    /* background: red; */
+    
+}
+
+header{
+    max-width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(120, 8, 33,.8), rgba(120, 8, 33,.8)), url(./assets/imagem-header22.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+header p{
+    width: 80vw;
+    color: #ffffff;
+    font-family: "Roboto", Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.1em;
+    letter-spacing: 0.4px;
+    text-shadow: 0px 0px 10px #000000;
+    text-align: center;
+    top: 50px;
+    margin: 40px auto 0px auto;
+
+}
+
+b{
+    font-weight: 700;
+    color: #efd97b;
+}
+
+button{
+    font-family: "Poppins", Sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #81D15E;
+    border-style: solid;
+    border-color: #81D15E;
+    border-radius: 50px 50px 50px 50px;
+    padding: 15px 50px 15px 50px;
+    cursor: pointer;
+    color: white;
+    margin: 60px auto 0px auto;
+    display: block;
+}
+
+button:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+.link-contact{
+    text-decoration: none;
+    color: white;
+
+}
+
+.img-logo{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10%;
+
+}
+
+.section-assuntos{
+
+    padding-top: 50px;
+}
+.section-assuntos h1{
+    width: 100%;
+    color: rgba(120, 8, 33);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1em;
+    letter-spacing: -1.4px;
+    text-align: center;
+}
+
+.container-assuntos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;    
+}
+
+.assuntos{
+    width:275px;
+    height: 224px;
+    
+}
+
+.assuntos p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:950px) {
+
+    header{
+        width: 100%;
+        height: 35%;
+        background-size: cover; 
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    .img-logo{
+        width: 40%;
+    
+    }
+    
+}
+
+@media screen and (max-width:850px) {
+
+    header{
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+        background-position:center;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+
+    
+}
+
+@media screen and (max-width:790px) {
+
+    header{
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+        background-position:center;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    .section-assuntos h1{
+        font-size: 35px;
+    }
+
+    .container-assuntos{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .assuntos{
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width:584px) {
+
+    header{
+        width: 100%;
+        height: 30%;
+      
+        background-size: cover;
+        background-position:center;
+    }
+
+    h1{
+    
+        font-size: 30px;
+    }
+
+    p{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    button{
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .link-contact{
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+
+    header{
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+        background-position:center;
+    }
+
+    h1{
+    
+        font-size: 27px;
+    }
+
+    p{  
+        width: 90%;
+        font-size: 20px;
+    }
+
+    button{
+        margin: 40px auto;
+        font-size: 15px;
+    }
+
+    .img-logo{
+        width: 60%;
+    
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+
+    header{
+        width: 100%;
+        height: 32%;
+        background-size: cover;
+        background-position:center;
+    }
+
+    h1{
+    
+        font-size: 22px;
+    }
+
+    p{  
+        width: 90%;
+        font-size: 20px;
+    }
+
+    button{
+        margin: 40px auto;
+        font-size: 12px;
+    }
+
+    .link-contact{
+        font-size: 15px;
+    }
+    
+}
