@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,24 +7,24 @@
 }
 
 
-.wrapper{
+.wrapper {
     width: 100%;
-    height: calc(100vh + 100vh);
+    height: calc(100vh + 200vh);
     /* background: red; */
-    
+
 }
 
-header{
+header {
     max-width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(120, 8, 33,.8), rgba(120, 8, 33,.8)), url(./assets/imagem-header22.jpg) no-repeat;
+    background: linear-gradient(rgba(120, 8, 33, .8), rgba(120, 8, 33, .8)), url(./assets/imagem-header22.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 
 
-header p{
+header p {
     width: 80vw;
     color: #ffffff;
     font-family: "Roboto", Sans-serif;
@@ -39,12 +39,12 @@ header p{
 
 }
 
-b{
+b {
     font-weight: 700;
     color: #efd97b;
 }
 
-button{
+button {
 
     font-family: "Poppins", Sans-serif;
     font-size: 20px;
@@ -63,22 +63,28 @@ button{
     display: block;
 }
 
-button:hover{
+button:hover {
     opacity: 0.7;
     transition: 0.5s;
 }
 
-button:active{
+button:active {
     opacity: 0.6;
 }
 
-.link-contact{
+.link-contact {
     text-decoration: none;
     color: white;
 
 }
 
-.img-logo{
+.link-contact-sobre {
+    text-decoration: none;
+    color: white;
+
+}
+
+.img-logo {
     width: 25%;
     display: block;
     margin: 0 auto;
@@ -86,11 +92,13 @@ button:active{
 
 }
 
-.section-assuntos{
+.section-assuntos {
 
     padding-top: 50px;
+    padding-bottom: 50px;
 }
-.section-assuntos h1{
+
+.section-assuntos h1 {
     width: 100%;
     color: rgba(120, 8, 33);
     font-size: 40px;
@@ -100,241 +108,351 @@ button:active{
     text-align: center;
 }
 
-.container-assuntos{
+.container-assuntos {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
-.assuntos{
-    width:275px;
+.assuntos {
+    width: 275px;
 }
 
-.assuntos p{
+.assuntos p {
     text-align: center;
     font-size: 28px;
     font-weight: bold;
 }
 
-.img-assunto{
+.img-assunto {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(120, 8, 33);
+    background: #efd97b;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    opacity: 0.9;
+    width: 120px;
+    height: 120px;
     margin: 50px auto 30px auto;
 }
 
-.img-assunto:hover{
-   opacity: 0.7;
-   transition: 0.3s;
+.img-assunto:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgba(120, 8, 33);
 }
 
+/* .container-assuntos-button {
+    padding-top: 30px;
+} */
 
+.section-flavia {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 607px;
+    background: rgb(92,4,23);
+    background: linear-gradient(90deg, rgba(92,4,23,1) -59%, rgba(120,8,33,1) 0%, rgba(120,8,33,1) 45%);
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.img-flavia {
+    width: 22%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 0px #f7f7f7;
+}
+
+.sobre-text{
+    width: 670px;
+    height: auto;
+    padding: 10px;
+    height: auto;
+}
+
+.sobre-text h2{
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+}
+
+.sobre-text p{
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-top: 20px;
+}
+
+.button-sobre{
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #2C9E1D;
+    border-style: solid;
+    border-color: #2C9E1D;
+    border-radius: 50px 50px 50px 50px;
+    
+}
+
+@media screen and (max-width:1680px) {
+
+    .img-flavia {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+
+    .img-flavia {
+        width: 32%;
+    }
+
+}
 
 @media screen and (max-width:950px) {
 
-    header{
+    header {
         width: 100%;
-        height: 40%;
-        background-size: cover; 
+        height: 42%;
+        background-size: cover;
     }
 
-    h1{
+    h1 {
         font-size: 40px;
     }
 
-    p{
+    p {
         font-size: 25px;
     }
 
-    .img-logo{
-        width: 40%;
-    
+    .img-logo {
+        width: 80%;
+
     }
-    
+
+    .section-flavia{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .img-flavia {
+        width: 70%;
+    }
+
+    .button-sobre{
+        display: block;
+        position: relative;
+
+    }
+
+    .sobre-text h2{
+        text-align: center;
+    }
+
+
 }
 
 @media screen and (max-width:850px) {
 
-    header{
+    header {
         width: 100%;
         height: 35%;
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
 
-    h1{
+    h1 {
         font-size: 35px;
     }
 
-    p{
+    p {
         font-size: 25px;
     }
 
-        .img-logo{
+    .img-logo {
         width: 60%;
-    
+
     }
-    
+
+    .sobre-text{
+        width: 100%;
+    }
+
+
+
 }
 
 @media screen and (max-width:790px) {
 
-    header{
+    header {
         width: 100%;
         height: 37%;
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
 
-    h1{
+    h1 {
         font-size: 40px;
     }
 
-    p{
+    p {
         font-size: 25px;
     }
 
-    .section-assuntos h1{
+    .section-assuntos h1 {
         font-size: 40px;
     }
 
-    .container-assuntos{
+    .container-assuntos {
         display: flex;
         flex-direction: column;
-        
+
     }
 
-    .assuntos{
+    .assuntos {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-        .img-logo{
+    .img-logo {
         width: 70%;
-    
+
     }
-    
+
 }
 
 @media screen and (max-width:584px) {
 
-    header{
+    header {
         width: 100%;
         height: 37%;
-      
+
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
 
-    h1{
-    
+    h1 {
+
         font-size: 30px;
     }
 
-    p{
+    p {
         width: 90%;
         font-size: 20px;
     }
 
-    button{
+    button {
         width: 95%;
         margin: 40px auto;
     }
 
-    .link-contact{
+    .link-contact {
         font-size: 17px;
     }
 
-        .assuntos{
+    .assuntos {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
 }
 
 @media screen and (max-width:400px) {
 
-    header{
+    header {
         width: 100%;
-        height: 37%;
+        height: 20%;
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
 
-    h1{
-    
+    h1 {
+
         font-size: 27px;
     }
 
-    p{  
+    p {
         width: 90%;
         font-size: 20px;
     }
 
-    button{
+    button {
         margin: 40px auto;
         font-size: 15px;
     }
 
-    .img-logo{
+    .img-logo {
         width: 70%;
-    
+
     }
 
-        .assuntos{
+    .assuntos {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    
+    .button-sobre{
+        padding: 5px 5px 5px 5px;
+    }
+
+    .link-contact-sobre{
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (max-width:350px) {
 
-    header{
+    header {
         width: 100%;
-        height: 45%;
+        height: 30%;
         background-size: cover;
-        background-position:center;
+        background-position: center;
     }
 
-    h1{
-    
+    h1 {
+
         font-size: 22px;
     }
 
-    p{  
+    p {
         width: 90%;
         font-size: 20px;
     }
 
-    button{
+    button {
         margin: 40px auto;
         font-size: 12px;
     }
 
-    .link-contact{
+    .link-contact {
         font-size: 15px;
     }
 
-        .assuntos{
+    .assuntos {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .img-flavia {
+        width: 100%;
+    }
 
-    
 }
